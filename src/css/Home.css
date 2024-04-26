@@ -1,0 +1,41 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray */
+  }
+  
+  .hero-content {
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Add some space from the left */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .hero-text {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray */
+    margin-bottom: 40px;
+  }
+  
+  .hero-image {
+    width: 50%; /* Set image width to occupy half of the screen */
+    height: 100%;
+    background-image: url('Images/th.jpeg');
+    background-size: contain; /* Maintain aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image is not repeated */
+    transition: transform 0.3s ease; /* Add transition effect */
+  }
+  
+  .hero:hover .hero-content,
+  .hero:hover .hero-image {
+    transform: translateX(20px); /* Add hover effect */
+  }
+  
